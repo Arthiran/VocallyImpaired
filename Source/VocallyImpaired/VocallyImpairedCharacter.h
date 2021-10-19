@@ -4,10 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "IHateTalkingCharacter.generated.h"
+#include "VocallyImpairedCharacter.generated.h"
 
 UCLASS(config=Game)
-class AIHateTalkingCharacter : public ACharacter
+class AVocallyImpairedCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
@@ -28,7 +28,7 @@ protected:
 	float currentDirection;
 
 public:
-	AIHateTalkingCharacter();
+	AVocallyImpairedCharacter();
 
 	/** Called for side to side input */
 	UFUNCTION(BlueprintCallable, Category = "IHT Functions")

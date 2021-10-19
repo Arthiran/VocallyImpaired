@@ -1,13 +1,13 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "IHateTalkingCharacter.h"
+#include "VocallyImpairedCharacter.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
-AIHateTalkingCharacter::AIHateTalkingCharacter()
+AVocallyImpairedCharacter::AVocallyImpairedCharacter()
 {
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
@@ -47,19 +47,19 @@ AIHateTalkingCharacter::AIHateTalkingCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
-void AIHateTalkingCharacter::ChangeDirection(float direction)
+void AVocallyImpairedCharacter::ChangeDirection(float direction)
 {
 	currentDirection = direction;
 }
 
-void AIHateTalkingCharacter::Tick(float DeltaTime)
+void AVocallyImpairedCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 	MoveRight(currentDirection);
 }
 
-void AIHateTalkingCharacter::MoveRight(float Value)
+void AVocallyImpairedCharacter::MoveRight(float Value)
 {
 	// add movement in that direction
 	AddMovementInput(FVector(-1.f,0.f,0.f), Value);

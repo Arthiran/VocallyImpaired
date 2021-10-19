@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class IHateTalking : ModuleRules
+public class VocallyImpaired : ModuleRules
 {
-	public IHateTalking(ReadOnlyTargetRules Target) : base(Target)
+	public VocallyImpaired(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 

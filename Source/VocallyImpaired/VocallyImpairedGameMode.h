@@ -4,15 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "IHateTalkingGameMode.generated.h"
+#include "VocallyImpairedGameMode.generated.h"
 
 UCLASS(minimalapi)
-class AIHateTalkingGameMode : public AGameModeBase
+class AVocallyImpairedGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 
 public:
-	AIHateTalkingGameMode();
+	AVocallyImpairedGameMode();
 };
 
 

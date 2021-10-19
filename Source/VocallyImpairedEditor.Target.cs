@@ -3,12 +3,12 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class IHateTalkingEditorTarget : TargetRules
+public class VocallyImpairedEditorTarget : TargetRules
 {
-	public IHateTalkingEditorTarget(TargetInfo Target) : base(Target)
+	public VocallyImpairedEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.Add("IHateTalking");
+		ExtraModuleNames.Add("VocallyImpaired");
 	}
 }
