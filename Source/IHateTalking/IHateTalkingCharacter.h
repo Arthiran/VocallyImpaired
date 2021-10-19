@@ -21,16 +21,18 @@ class AIHateTalkingCharacter : public ACharacter
 
 protected:
 
-	/** Called for side to side input */
+	virtual void Tick(float DeltaTime) override;
+
 	void MoveRight(float Val);
 
-	// APawn interface
-	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
-	// End of APawn interface
-
+	float currentDirection;
 
 public:
 	AIHateTalkingCharacter();
+
+	/** Called for side to side input */
+	UFUNCTION(BlueprintCallable, Category = "IHT Functions")
+		void ChangeDirection(float direction);
 
 	/** Returns SideViewCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }

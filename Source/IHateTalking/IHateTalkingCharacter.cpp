@@ -41,19 +41,22 @@ AIHateTalkingCharacter::AIHateTalkingCharacter()
 	GetCharacterMovement()->MaxWalkSpeed = 600.f;
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
 
+	currentDirection = -1.f;
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
-//////////////////////////////////////////////////////////////////////////
-// Input
-
-void AIHateTalkingCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+void AIHateTalkingCharacter::ChangeDirection(float direction)
 {
-	// set up gameplay key bindings
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	PlayerInputComponent->BindAxis("MoveRight", this, &AIHateTalkingCharacter::MoveRight);
+	currentDirection = direction;
+}
+
+void AIHateTalkingCharacter::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	MoveRight(currentDirection);
 }
 
 void AIHateTalkingCharacter::MoveRight(float Value)
