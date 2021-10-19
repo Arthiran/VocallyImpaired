@@ -30,13 +30,14 @@ AVocallyImpairedCharacter::AVocallyImpairedCharacter()
 	SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
 	SideViewCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	SideViewCameraComponent->bUsePawnControlRotation = false; // We don't want the controller rotating the camera
+	SideViewCameraComponent->ProjectionMode = ECameraProjectionMode::Orthographic;
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Face in the direction we are moving..
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 720.0f, 0.0f); // ...at this rotation rate
 	GetCharacterMovement()->GravityScale = 2.f;
 	GetCharacterMovement()->AirControl = 0.80f;
-	GetCharacterMovement()->JumpZVelocity = 1000.f;
+	GetCharacterMovement()->JumpZVelocity = 2000.f;
 	GetCharacterMovement()->GroundFriction = 3.f;
 	GetCharacterMovement()->MaxWalkSpeed = 600.f;
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
