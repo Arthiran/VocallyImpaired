@@ -54,25 +54,11 @@ void AIHateTalkingCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AIHateTalkingCharacter::MoveRight);
-
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &AIHateTalkingCharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &AIHateTalkingCharacter::TouchStopped);
 }
 
 void AIHateTalkingCharacter::MoveRight(float Value)
 {
 	// add movement in that direction
-	AddMovementInput(FVector(0.f,-1.f,0.f), Value);
-}
-
-void AIHateTalkingCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	// jump on any touch
-	Jump();
-}
-
-void AIHateTalkingCharacter::TouchStopped(const ETouchIndex::Type FingerIndex, const FVector Location)
-{
-	StopJumping();
+	AddMovementInput(FVector(-1.f,0.f,0.f), Value);
 }
 
