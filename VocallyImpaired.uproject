@@ -5,7 +5,7 @@
 	"Description": "",
 	"Modules": [
 		{
-			"Name": "IHateTalking",
+			"Name": "VocallyImpaired",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}
