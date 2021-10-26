@@ -1,12 +1,12 @@
 # Vocally Impaired Repository
 
-![Alt Text](https://github.com/Arthiran/Marbles/blob/main/Screenshots/VocallyImpairedDP.jpg)
+![Alt Text](https://github.com/Arthiran/VocallyImpaired/blob/main/Screenshots/VocallyImpairedDP.jpg)
 
 ​Vocally Impaired is a 2.5D platformer inspired by masochist games such as Getting Over It, and Jump King.
 
-![Alt Text](https://github.com/Arthiran/Marbles/blob/main/Screenshots/VIScreenshot1.jpg)
-![Alt Text](https://github.com/Arthiran/Marbles/blob/main/Screenshots/VIScreenshot2.jpg)
-![Alt Text](https://github.com/Arthiran/Marbles/blob/main/Screenshots/VIScreenshot3.jpg)
+![Alt Text](https://github.com/Arthiran/VocallyImpaired/blob/main/Screenshots/VIScreenshot1.jpg)
+![Alt Text](https://github.com/Arthiran/VocallyImpaired/blob/main/Screenshots/VIScreenshot2.jpg)
+![Alt Text](https://github.com/Arthiran/VocallyImpaired/blob/main/Screenshots/VIScreenshot3.jpg)
 
 This game was made for the Ludwig game jam where the theme was based off Foddian games.
 
