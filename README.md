@@ -12,11 +12,9 @@ This game was made for the Ludwig game jam where the theme was based off Foddian
 
 The idea was to create a game with a unique mechanic (Voice Controls), paired with level design to create a game which emulates the mentioned games.
 
-Please make sure you have a working microphone and speak clearly.
+This game was made with Unreal Engine 4.26.1
 
-Thank you for playing, I hope you enjoy!
-
-Instructions: 
+Instructions to play: 
 
 Go to: https://skrelo.itch.io/vocallyimpaired
 
